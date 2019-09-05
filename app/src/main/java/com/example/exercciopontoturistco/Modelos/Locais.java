@@ -1,20 +1,15 @@
 package com.example.exercciopontoturistco.Modelos;
 
 public class Locais {
-    private String id;
     private String nome;
     private String distancia;
-    private String descricao;
+    private Integer imagem;
 
-    public Locais(String id, String nome, String distancia) {
-        this.id = id;
+    public Locais(Integer imagem, String nome, String distancia) {
         this.nome = nome;
         this.distancia = distancia;
+        this.imagem = imagem;
     }
-
-    public String getId() { return id; }
-
-    public void setId(String id) { this.id = id; }
 
     public String getNome() { return nome; }
 
@@ -23,5 +18,9 @@ public class Locais {
     public String getDistancia() { return distancia; }
 
     public void setDistancia(String distancia) { this.distancia = distancia; }
+
+    public Integer getImagem() { return imagem; }
+
+    public void setImagem(Integer id) { this.imagem = imagem; }
 
 }
