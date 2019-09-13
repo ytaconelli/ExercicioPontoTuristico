@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 
 import com.example.exercciopontoturistco.Modelos.Locais;
 import com.example.exercciopontoturistco.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +49,7 @@ public class MeuAdapter extends ArrayAdapter<Locais> {
         distancia.setText(nomeLocal.getDistancia());
 
         ImageView imageLocal = listItem.findViewById(R.id.imageView);
-        
+        Picasso.get().load(nomeLocal.getImgScr()).resize(120,100).centerCrop().into(imageLocal);
 
         return listItem;
     }
